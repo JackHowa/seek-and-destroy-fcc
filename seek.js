@@ -1,9 +1,9 @@
+function destroyer(destroyableInputs) {
+  var potentialDeletes = [destroyableInputs[0]];
+  var valuesToDelete = [destroyableInputs[1], destroyableInputs[1]];
 
-function destroyer(potentiallyDestroyedArray) {
-  return potentiallyDestroyedArray[0].filter(function(potentialDestroy) {
-    return potentiallyDestroyedArray[1].includes(potentialDestroy);
+  return potentialDeletes.filter(function(potentialDestroy) {
+    return valuesToDelete.indexOf(potentialDestroy) > -1;
   });
-
 }
-
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
