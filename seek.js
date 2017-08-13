@@ -1,8 +1,10 @@
 function destroyer(destroyableInputs) {
-  var arr = Array.prototype.slice.call(arguments);
-  var args = Array.from(arguments);
+  var args = Array.prototype.slice.call(arguments);
 
-  console.log(args);
+  var potentialDeletes = args[0];
+  var valuesToDelete = [args[1],args[2]];
+
+
   // var undeletedElements = potentialDeletes.filter(function(potentialDestroy) {
   //   return (valuesToDelete.indexOf(potentialDestroy) > -1);
   // });
